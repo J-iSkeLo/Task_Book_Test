@@ -50,7 +50,7 @@ fun BooksRecyclerLazy(
         Spacer(modifier = Modifier.height(16.dp))
         LazyRow(
             horizontalArrangement = Arrangement.SpaceEvenly,
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp)
         ) {
             items(genre.value) { book ->
                 Column(

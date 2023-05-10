@@ -3,12 +3,8 @@ package com.books.app.navigation
 import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.safeDrawing
-import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import com.books.app.presentation.details.DetailsScreen
 import com.books.app.presentation.main.MainScreen
 import com.books.app.presentation.splash.SplashScreen
@@ -34,7 +30,6 @@ fun Navigation() {
         exitTransition = { slideOutOfContainer(slideLeft, animationSpec = tween(ANIM_DURATION)) },
         popEnterTransition = { slideIntoContainer(slideRight, animationSpec = tween(ANIM_DURATION)) },
         popExitTransition = { slideOutOfContainer(slideRight, animationSpec = tween(ANIM_DURATION)) },
-        modifier = Modifier.windowInsetsPadding(WindowInsets.safeDrawing)
     ) {
         composable(Screens.SplashScreen.route) { SplashScreen(navController, koinViewModel()) }
         composable(Screens.MainScree.route) { MainScreen(navController, koinViewModel()) }
