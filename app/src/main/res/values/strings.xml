@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task Book</string>
+    <string name="book_app">Book App</string>
+    <string name="welcome">Welcome to Book App</string>
+    <string name="library">Library</string>
+    <string name="readers">Readers</string>
+    <string name="likes">Likes</string>
+    <string name="quotes">Quotes</string>
+    <string name="genre">Genre</string>
+    <string name="summary">Summary</string>
+    <string name="you_will_also_like">" You will also like"</string>
+</resources>
